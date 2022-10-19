@@ -18,7 +18,7 @@ type User struct {
 }
 
 func Send(user User) {
-	d := gomail.NewDialer("smtp.mail.ru", 465, "darhan.gruz@mail.ru", "Kvwi4MddUkfbLJu63tPT")
+	d := gomail.NewDialer("smtp.mail.ru", 465, "darhan.gruz@mail.ru", "password")
 	d.StartTLSPolicy = gomail.MandatoryStartTLS
 	s, err := d.Dial()
 	if err != nil {
